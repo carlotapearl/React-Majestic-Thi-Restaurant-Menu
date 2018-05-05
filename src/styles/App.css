@@ -4,7 +4,22 @@ body {
 nav{
   margin-top: 30px;
 }
-
+.header-col {
+  text-align: center;
+  height: 30vw;
+  color: #fff;
+  background-image: url("http://www.joysthaifood.com/wp-content/uploads/2016/03/Thai-fish-Lemon-Soup.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 1px 17px 5px 0px rgba(0, 0, 0, 0.75);
+  font-family: decorative;
+}
 .menu{
   background-color: white;
+}
+.restaurant-name{
+  font-size: 80px;
+}
+.subtitle{
+  font-size: 50px;
 }

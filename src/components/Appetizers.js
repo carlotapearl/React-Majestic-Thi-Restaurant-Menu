@@ -4,7 +4,7 @@ export default class Appetizers extends Component {
 
   render(){
     // Set items' value....
-    let items = '',
+    let items = this.props.appetizers
     // Since the items do not have a key, let's create one.
     let key = 0;
     let appetizers = items.map((items)=>{

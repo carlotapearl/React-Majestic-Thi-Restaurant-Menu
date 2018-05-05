@@ -9,10 +9,15 @@ export default class BaseLayout extends Component {
       titleStyle (font, Arizonia. size, 150) for 'restaurant-name'
       subtitleStyle (font, Raleway. size, 80) for 'subtitle'
       */}
-
-    {/*
-      Create an inline.
-      headerSytle:
+    let titleStyle = {
+      "fontFamily": "Arizonia",
+      "fontSize": "150"
+    }
+    let subtitleStyle = {
+      "fontFamily": "Raleway",
+      "fontSize": "80"
+    }
+    let headerStyle = {
       "textAlign": "center",
       "height": "30vw",
       "color": "#fff",
@@ -21,7 +26,7 @@ export default class BaseLayout extends Component {
       "backgroundPosition": "center",
       "boxShadow": "1px 17px 5px 0px rgba(0, 0, 0, 0.75)",
       "fontFamily": "decorative",
-      */}
+    }
 
     return (
       <div className="container-fluid nav">
@@ -41,9 +46,7 @@ export default class BaseLayout extends Component {
             </div>
           </div>
         </nav>
-            {/*
-                >>>> CHILDREN COMPONENTS <<<<
-              */}
+          {this.props.children} /* CHILDREN COMPONENTS */
         <footer>
           <span className="footer-title">Majestic Thai </span><span>100 Main Street, Spartanburg, SC, 29302 | (864) 898-9999</span>
         </footer>
